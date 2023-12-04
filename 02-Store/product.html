@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./Styles/normalize.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./Styles/style.css">
   <title>FrontEnd Store</title>
 </head>
+
 <body>
   <header class="header">
     <a href="index.html">
@@ -22,9 +25,28 @@
   </nav>
   <main class="container">
     <h1>Products</h1>
+    <div class="cat">
+      <img src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_640.jpg" alt="" class="cat__i">
+      <div class="cat__content">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi atque eveniet in natus debitis id aliquid
+          possimus ipsa deleniti voluptatum magnam molestiae, adipisci dolorem ab quam voluptatibus nemo maxime illo?
+        </p>
+        <form class="form" action="">
+          <select class="form__space">
+            <option disabled selected value="">--Select cat--</option>
+            <option value="">cute</option>
+            <option value="">Mega cute</option>
+            <option value="">Ultra cute</option>
+          </select>
+          <input class="form__space" type="number" placeholder="Amount" min="1">
+          <input class="form__submit" type="submit" value="add to cart">
+        </form>
+      </div>
+    </div>
   </main>
   <footer class="footer">
     <p class="footer__text">all rights reserved @Oriordan 2023</p>
   </footer>
 </body>
+
 </html>

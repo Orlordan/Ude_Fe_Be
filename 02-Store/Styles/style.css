@@ -93,11 +93,11 @@ h3 {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
    .grid {
     grid-template-columns: repeat(3, 1fr)    
    }
-}
+} */
 /* products */
 .product {
   background-color: var(--primaryDark);
@@ -105,9 +105,6 @@ h3 {
 }
 .product__img {
 width: 100%;
-}
-.product__info {
-
 }
 .product__name {
   font-size: 4rem;
@@ -127,16 +124,93 @@ min-height: 30rem;
 .grafico--camisas {
   grid-row: 2 / 3;
   grid-column: 1 / 3;
-  background-image: url(../img/grafico1.jpg);
+  background-image: url(https://cdn.pixabay.com/photo/2017/02/15/12/12/cat-2068462_1280.jpg);
 }
 .grafico--node {
-  background-image: url(../img/grafico2.jpg);
+  background-image: url(https://cdn.pixabay.com/photo/2017/02/15/12/12/cat-2068462_1280.jpg);
   grid-row: 1 / 3;
   grid-column: 8 / 9;
 }
 @media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);   
+   }
   .grafico--node {
     grid-row: 5 / 6;
     grid-column: 2 / 4;
   }
+}
+/*- ************us************* */
+.us {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 2rem;
+}
+.us__img {
+  grid-row: 1 / 2;
+  width: 100%;
+}
+
+
+/*- ************BLOCKS************* */
+
+.blocks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.block {
+  text-align: center;
+}
+.block__title {
+  margin: 0;
+}
+.block__img{
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .us {
+    grid-template-columns: repeat(2, auto);
+  }
+  .us__img {
+    grid-column: 2 /3;
+  }
+  .blocks {
+    grid-template-columns: repeat(4, auto);
+  }
+  .cat {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 2rem;
+  }
+}
+/*- ************PRRODUCT************* */
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.form__space {
+  border: 1rem solid var(--primaryDark);
+  background-color: transparent;
+  color: var(--white);
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  appearance: none;
+}
+.form__submit {
+  background-color: var(--secundary);
+  border: none;
+  font-size: 2rem;
+  font-family: var(--fontMain);
+  padding: 2rem;
+  transition: background-color .8s ease;
+  grid-column: 1/3;
+}
+.form__submit:hover {
+  cursor: pointer;
+  background-color: var(--primaryDark);
 }
